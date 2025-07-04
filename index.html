@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Undangan A & B</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <audio id="bg-music" loop>
+    <source src="audio/lagu.mp3" type="audio/mpeg">
+  </audio>
+
+  <div class="container">
+    <h1 class="judul fade-in">Undangan Pernikahan</h1>
+    <h2 class="pasangan">A & B</h2>
+    <p class="tanggal">Sabtu, 12 Oktober 2025<br> Pukul 10:00 WIB</p>
+    <p class="lokasi">Gedung Sakura<br>Jl. Anggrek No. 99, Bandung</p>
+    
+    <div class="foto">
+      <img src="images/pasangan.jpg" alt="Foto Mempelai" />
+    </div>
+
+    <h3>Lokasi Acara</h3>
+    <div class="maps">
+      <iframe src="https://maps.google.com/maps?q=gedung%20sakura%20bandung&t=&z=15&ie=UTF8&iwloc=&output=embed"></iframe>
+    </div>
+
+    <button onclick="playMusic()" class="btn-music">Buka & Putar Musik</button>
+
+    <p class="ucapan">Kami mengundang Bapak/Ibu/Saudara/i untuk hadir pada hari bahagia kami. 🙏</p>
+  </div>
+
+  <script>
+    function playMusic() {
+      document.getElementById("bg-music").play();
+    }
+  </script>
+</body>
+</html>
