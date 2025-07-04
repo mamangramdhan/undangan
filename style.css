@@ -1,0 +1,85 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #fff0f5, #ffe3e3);
+  color: #333;
+}
+
+.container {
+  max-width: 700px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 16px;
+  padding: 30px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.judul {
+  font-size: 2.5em;
+  color: #b91c1c;
+  margin-bottom: 0;
+}
+
+.pasangan {
+  font-size: 2em;
+  color: #6b0d0d;
+}
+
+.tanggal, .lokasi, .ucapan {
+  margin: 20px 0;
+  font-size: 1.1em;
+}
+
+.maps iframe {
+  width: 100%;
+  height: 250px;
+  border: 0;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.foto img {
+  max-width: 100%;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.btn-music {
+  background: #dc2626;
+  color: white;
+  padding: 10px 20px;
+  margin: 20px 0;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1em;
+}
+
+.btn-music:hover {
+  background: #b91c1c;
+}
+
+.fade-in {
+  animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 20px;
+    padding: 20px;
+  }
+
+  .judul {
+    font-size: 2em;
+  }
+
+  .pasangan {
+    font-size: 1.6em;
+  }
+}
